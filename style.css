@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sogot{
+    width: 40vw;
+    height: 40vw;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border: 8px solid #1A2A3A;
+}
+
+.nomer{
+    --rotation: 0deg;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nomer-1{
+    --rotation:30deg;
+}
+.nomer-2{
+    --rotation:60deg;
+}
+.nomer-3{
+    --rotation:90deg;
+}
+.nomer-4{
+    --rotation:120deg;
+}
+.nomer-5{
+    --rotation:150deg;
+}
+.nomer-6{
+    --rotation:180deg;
+}
+.nomer-7{
+    --rotation:210deg;
+}
+.nomer-8{
+    --rotation:240deg;
+}
+.nomer-9{
+    --rotation:270deg;
+}
+.nomer-10{
+    --rotation:300deg;
+}
+.nomer-11{
+    --rotation:330deg;
+}
+
+.hour{
+    width: 2%;
+    height: 33%;
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+    left: 49%;
+    top: 17.4%;
+    opacity: .8;
+    transform-origin: bottom;
+}
+.minute{
+    width: 1.7%;
+    height: 38%;
+    background-color: rgb(237, 9, 100);
+    border-radius: 10px;
+    position: absolute;
+    left: 49.2%;
+    top: 12.3%;
+    opacity: .8;
+    transform-origin: bottom;
+}
+.second{
+    width: 1%;
+    height: 40%;
+    background-color: rgb(255, 247, 0);
+    border-radius: 10px;
+    position: absolute;
+    left: 49.5%;
+    top: 10%;
+    opacity: .8;
+    transform-origin: bottom;
+}
+
+.center-box{
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+   
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvwit9xQHjB0gwvd8BCP_UqoeYnceqDUyGQ&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .sogot{
+     border: 4px solid #1A2A3A;
+   }
+   .nomer{
+        font-size: 1rem;
+    }
+
+    .center-box{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nomer{
+    --rotation:0deg;
+    color: #000;
+}
+.nomer-1{
+    --rotation:30deg;
+    color: #000;
+}
+.nomer-2{
+    --rotation:60deg;
+    color: #000;
+}
+.nomer-3{
+    --rotation:90deg;
+    color: #000;
+}
+.nomer-4{
+    --rotation:120deg;
+    color: #000;
+}
+.nomer-5{
+    --rotation:150deg;
+    color: #000;
+}
+.nomer-6{
+    --rotation:180deg;
+    color: #000;
+}
+.nomer-7{
+    --rotation:210deg;
+    color: #000;
+}
+.nomer-8{
+    --rotation:240deg;
+    col000;
+}
+.nomer-9{
+    --rotation:270deg;
+    color: #000;
+}
+.nomer-10{
+    --rotation:300deg;
+    color: #000;
+}
+.nomer-11{
+    --rotation:330deg;
+    color: #000;
+}
+
+}
